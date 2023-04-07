@@ -1,6 +1,3 @@
-from collections import deque
-
-
 def solution(n, computers):
     global visited
     answer = 0
@@ -20,9 +17,3 @@ def dfs(i, computers):
         if not visited[idx] and computer:
             visited[idx] = True
             dfs(idx, computers)
-
-
-n = 3
-computers = [[1, 1, 0], [1, 1, 0], [0, 0, 1]]
-
-print(solution(n, computers))
