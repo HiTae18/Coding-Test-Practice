@@ -18,6 +18,7 @@ def solution(begin, target, words):
         for i in range(len(words)):
             if not visited[i] and is_possible(word, words[i]):
                 queue.append([words[i], loc+1])
+                visited[i] = True
 
     return 0
 
